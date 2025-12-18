@@ -3,7 +3,7 @@
 A cross-platform desktop application for real-time voice-to-text transcription using Tauri, React, and Deepgram AI.
 
 ## � Live Demo
-**Try it now:** https://wispr-clone-5ahw6s8ws-vasanths-projects-60ee5249.vercel.app  
+**Try it now:** https://wispr-clone-three.vercel.app  
 *(No installation needed!)*
 ## 💻 Desktop App Available
 ✅ **Native Windows/macOS/Linux desktop application built successfully!**  

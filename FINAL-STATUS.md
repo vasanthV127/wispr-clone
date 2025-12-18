@@ -3,7 +3,7 @@
 ## ✅ ALL 3 MAJOR GOALS ACHIEVED!
 
 ### 1. ✅ LIVE DEPLOYMENT - SUCCESS!
-**🌐 Live URL:** https://wispr-clone-5ahw6s8ws-vasanths-projects-60ee5249.vercel.app
+**🌐 Live URL:** https://wispr-clone-three.vercel.app
 - Auto-deployment from GitHub configured
 - Instant access for recruiters
 - No installation required

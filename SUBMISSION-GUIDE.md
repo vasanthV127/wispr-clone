@@ -26,7 +26,7 @@ npm run dev
 Then open: http://localhost:5173
 
 **Option B: Live Demo (No installation needed!)**
-Visit: https://wispr-clone-5ahw6s8ws-vasanths-projects-60ee5249.vercel.app
+Visit: https://wispr-clone-three.vercel.app
 
 **Option C: Desktop App ✅ Available!**
 ```bash
@@ -137,7 +137,7 @@ Hi [Recruiter Name],
 I've completed the Wispr Flow clone technical assignment. Here are the deliverables:
 
 📁 GitHub Repository: https://github.com/vasanthV127/wispr-clone
-� Live Demo: https://wispr-clone-5ahw6s8ws-vasanths-projects-60ee5249.vercel.app
+🌐 Live Demo: https://wispr-clone-three.vercel.app
 🎥 Demo Video: [Your YouTube/Google Drive Link]
 💻 Desktop App: Native Windows/macOS/Linux build completed
 
