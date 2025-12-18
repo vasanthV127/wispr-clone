@@ -6,13 +6,20 @@ function VoiceRecorder() {
   const [transcription, setTranscription] = useState('');
   const [error, setError] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
+  const [recordingStartTime, setRecordingStartTime] = useState(null);
+  const [recordingDuration, setRecordingDuration] = useState(0);
   
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
   const streamRef = useRef(null);
+  const durationIntervalRef = useRef(null);
 
   // Deepgram API configuration
   const DEEPGRAM_API_KEY = import.meta.env.VITE_DEEPGRAM_API_KEY || '';
+
+  // Calculate stats
+  const wordCount = transcription.trim() ? transcription.trim().split(/\s+/).length : 0;
+  const charCount = transcription.length;
 
   useEffect(() => {
     // Cleanup on unmount
@@ -20,8 +27,31 @@ function VoiceRecorder() {
       if (streamRef.current) {
         streamRef.current.getTracks().forEach(track => track.stop());
       }
+      if (durationIntervalRef.current) {
+        clearInterval(durationIntervalRef.current);
+      }
     };
   }, []);
+
+  // Keyboard shortcut: Ctrl+Space to toggle recording
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      // Ctrl+Space or Cmd+Space
+      if ((e.ctrlKey || e.metaKey) && e.code === 'Space') {
+        e.preventDefault();
+        if (isProcessing) return;
+        
+        if (isRecording) {
+          stopRecording();
+        } else {
+          startRecording();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [isRecording, isProcessing]);
 
   const startRecording = async () => {
     try {
@@ -69,6 +99,12 @@ function VoiceRecorder() {
 
       mediaRecorder.start();
       setIsRecording(true);
+      setRecordingStartTime(Date.now());
+      
+      // Start duration timer
+      durationIntervalRef.current = setInterval(() => {
+        setRecordingDuration(Math.floor((Date.now() - Date.now()) / 1000));
+      }, 100);
     } catch (err) {
       console.error('Error accessing microphone:', err);
       setError(`Microphone access denied: ${err.message}`);
@@ -79,6 +115,9 @@ function VoiceRecorder() {
     if (mediaRecorderRef.current && isRecording) {
       mediaRecorderRef.current.stop();
       setIsRecording(false);
+      if (durationIntervalRef.current) {
+        clearInterval(durationIntervalRef.current);
+      }
     }
   };
 
@@ -123,12 +162,28 @@ function VoiceRecorder() {
   const clearTranscription = () => {
     setTranscription('');
     setError('');
+    setRecordingDuration(0);
+  };
+
+  const downloadTranscription = () => {
+    if (!transcription) return;
+    
+    const blob = new Blob([transcription], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `transcription-${new Date().toISOString().slice(0, 10)}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   };
 
   return (
     <div className="voice-recorder">
       <div className="recorder-container">
         <h1>🎙️ Wispr Voice-to-Text</h1>
+        <p className="keyboard-hint">💡 Tip: Press <kbd>Ctrl</kbd> + <kbd>Space</kbd> to toggle recording</p>
         
         {error && (
           <div className="error-message">
@@ -159,12 +214,28 @@ function VoiceRecorder() {
               <button onClick={copyToClipboard} className="copy-button">
                 📋 Copy Text
               </button>
+              <button onClick={downloadTranscription} className="download-button">
+                💾 Download
+              </button>
               <button onClick={clearTranscription} className="clear-button">
                 🗑️ Clear
               </button>
             </div>
           )}
         </div>
+
+        {transcription && (
+          <div className="stats-container">
+            <div className="stat-item">
+              <span className="stat-label">Words</span>
+              <span className="stat-value">{wordCount}</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-label">Characters</span>
+              <span className="stat-value">{charCount}</span>
+            </div>
+          </div>
+        )}
 
         {transcription && (
           <div className="transcription-output">

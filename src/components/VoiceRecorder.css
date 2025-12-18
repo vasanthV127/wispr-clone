@@ -19,8 +19,25 @@
 h1 {
   text-align: center;
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 2rem;
+}
+
+.keyboard-hint {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 25px 0;
+}
+
+.keyboard-hint kbd {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: monospace;
+  font-size: 13px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .error-message {
@@ -96,9 +113,12 @@ h1 {
 .action-buttons {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .copy-button,
+.download-button,
 .clear-button {
   padding: 12px 24px;
   border: none;
@@ -119,6 +139,16 @@ h1 {
   transform: translateY(-2px);
 }
 
+.download-button {
+  background: #2196F3;
+  color: white;
+}
+
+.download-button:hover {
+  background: #0b7dda;
+  transform: translateY(-2px);
+}
+
 .clear-button {
   background: #f44336;
   color: white;
@@ -127,6 +157,36 @@ h1 {
 .clear-button:hover {
   background: #da190b;
   transform: translateY(-2px);
+}
+
+.stats-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f4f8;
+  border-radius: 12px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #667eea;
 }
 
 .transcription-output {

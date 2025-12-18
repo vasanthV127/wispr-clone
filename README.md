@@ -2,14 +2,21 @@
 
 A cross-platform desktop application for real-time voice-to-text transcription using Tauri, React, and Deepgram AI.
 
-## 🎥 Demo Video
+## � Live Demo
+**Try it now:** https://wispr-clone-5ahw6s8ws-vasanths-projects-60ee5249.vercel.app  
+*(No installation needed!)*
+
+## �🎥 Demo Video
 [Watch the demo video here](#) *(Add your video link after recording)*
 
 ## Features
 
 - 🎤 **Push-to-Talk Recording**: Simple click-to-record interface
+- ⌨️ **Keyboard Shortcut**: Press `Ctrl+Space` to toggle recording (NEW!)
 - 🎯 **Real-time Transcription**: Powered by Deepgram's Nova-2 model
+- 📊 **Live Statistics**: Word count and character count (NEW!)
 - 📋 **Copy to Clipboard**: Easily copy transcribed text
+- 💾 **Download Transcription**: Save as .txt file (NEW!)
 - 🖥️ **Cross-platform**: Works on Windows, macOS, and Linux
 - ⚡ **Lightweight**: Built with Tauri for minimal resource usage
 
