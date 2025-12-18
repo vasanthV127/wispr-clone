@@ -29,3 +29,12 @@ dist-ssr
 # Tauri build artifacts
 src-tauri/target/
 .vercel
+
+# Internal documentation and scripts (not for public repo)
+*-GUIDE.md
+*-SCRIPT.md
+STATUS.md
+FINAL-STATUS.md
+QUICK-START.txt
+*.bat
+*.ps1
