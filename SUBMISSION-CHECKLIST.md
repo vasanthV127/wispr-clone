@@ -70,7 +70,7 @@
   - ✅ Clean commit history
 
 #### 2. Demo Video ✅
-- **URL:** https://youtu.be/M-wpW-iMrME
+- **URL:** https://youtu.be/vkPUktHPpdw
 - **Duration:** ~2-3 minutes
 - **Content:**
   - ✅ Application introduction
@@ -265,4 +265,4 @@ Deployment Platforms:       2 (Web + Desktop)
 **Project Duration:** ~28 hours  
 **Repository:** https://github.com/vasanthV127/wispr-clone  
 **Live Demo:** https://wispr-clone-three.vercel.app  
-**Demo Video:** https://youtu.be/M-wpW-iMrME
+**Demo Video:** https://youtu.be/vkPUktHPpdw

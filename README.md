@@ -7,7 +7,7 @@ A cross-platform desktop application for real-time voice-to-text transcription u
 *(No installation needed - works in any modern browser)*
 
 ## 🎥 Demo Video
-**Watch the full demonstration:** https://youtu.be/M-wpW-iMrME  
+**Watch the full demonstration:** https://youtu.be/vkPUktHPpdw  
 *See all features in action including keyboard shortcuts, real-time transcription, and desktop app*
 
 ## 💻 Desktop App Available
@@ -203,7 +203,7 @@ Built as a technical assignment demonstrating cross-platform AI-powered desktop 
 
 **Project Repository:** https://github.com/vasanthV127/wispr-clone  
 **Live Demo:** https://wispr-clone-three.vercel.app  
-**Demo Video:** https://youtu.be/M-wpW-iMrME
+**Demo Video:** https://youtu.be/vkPUktHPpdw
 
 ## Acknowledgments
 

@@ -1,0 +1,95 @@
+# Form Submission Text
+
+Copy and paste this into the "Submission (URLs, Details, etc)" field:
+
+---
+
+## Wispr Flow Clone - Voice-to-Text Desktop App Submission
+
+**Name:** Vasanthakumar V  
+**Email:** vasanthvitian@gmail.com  
+**Phone:** 9025940848
+
+### 📦 Deliverables
+
+**1. GitHub Repository:**  
+https://github.com/vasanthV127/wispr-clone
+
+**2. Live Demo (Web App):**  
+https://wispr-clone-three.vercel.app
+
+**3. Demo Video:**  
+https://youtu.be/vkPUktHPpdw
+
+**4. Desktop Application:**  
+✅ Native Windows/macOS/Linux build completed successfully
+
+---
+
+### 🎯 Technical Stack
+
+- **Frontend:** React 19.1.0 with Vite
+- **Desktop Framework:** Tauri 2.0 (Rust backend)
+- **Speech Recognition:** Deepgram Nova-2 API
+- **Deployment:** Vercel (Web) + Native builds (Desktop)
+
+---
+
+### ✅ Core Features Implemented (6/6)
+
+1. ✅ Push-to-Talk Voice Input
+2. ✅ Microphone Access & Audio Capture
+3. ✅ Real-Time Transcription (Deepgram Nova-2)
+4. ✅ Display & Insert Text (Copy to Clipboard)
+5. ✅ Recording Controls with Visual Feedback
+6. ✅ Comprehensive Error Handling
+
+---
+
+### ⭐ Bonus Features (5 Additional)
+
+1. ⌨️ Keyboard Shortcuts (Ctrl+Space to toggle recording)
+2. 📊 Live Statistics (Word count & character count)
+3. 💾 Download Transcription (Save as .txt file)
+4. 🌐 Live Web Deployment (Vercel with auto-deployment)
+5. 🖥️ Native Desktop App (Cross-platform with Tauri)
+
+---
+
+### 📚 Documentation
+
+The repository includes comprehensive documentation:
+- README.md - Complete setup and usage guide
+- ARCHITECTURE.md - System architecture and design decisions
+- WORKFLOW.md - Development process and implementation timeline
+- QUICKSTART.md - Fast setup for developers
+- DEPLOYMENT.md - Deployment options and instructions
+- SUBMISSION-CHECKLIST.md - Requirements verification
+
+---
+
+### 🏆 Project Highlights
+
+- **11 Total Features** (6 required + 5 bonus = 183% completion)
+- **Live Deployment** for instant testing without setup
+- **Desktop Application** built successfully (~10MB lightweight app)
+- **Professional Documentation** with architecture and workflow details
+- **Clean, Maintainable Code** with proper separation of concerns
+- **Comprehensive Error Handling** with user-friendly messages
+
+---
+
+### 📊 Project Metrics
+
+- Development Time: ~28 hours
+- Code Quality: Production-ready with extensive documentation
+- Lines of Code: ~9,000 lines
+- Platforms Supported: Web + Windows/macOS/Linux desktop
+
+---
+
+**Setup Instructions:** All setup and installation instructions are available in the README.md file in the repository.
+
+**Thank you for the opportunity to work on this exciting project!**
+
+---

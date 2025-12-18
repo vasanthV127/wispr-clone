@@ -370,7 +370,7 @@ git push -u origin main
 8. Conclusion
 
 **Publishing:**
-- ✅ Uploaded to YouTube: https://youtu.be/M-wpW-iMrME
+- ✅ Uploaded to YouTube: https://youtu.be/vkPUktHPpdw
 - ✅ Added to README
 - ✅ Professional presentation
 
