@@ -1,15 +1,18 @@
 # Wispr Flow Clone - Voice-to-Text Desktop App
 
-A cross-platform desktop application for real-time voice-to-text transcription using Tauri, React, and Deepgram AI.
+A cross-platform desktop application for real-time voice-to-text transcription using Tauri, React, and Deepgram AI. Built as a functional clone of Wispr Flow, focusing on core voice-to-text workflow and seamless user experience.
 
-## � Live Demo
+## 🌐 Live Demo
 **Try it now:** https://wispr-clone-three.vercel.app  
-*(No installation needed!)*
+*(No installation needed - works in any modern browser)*
+
+## 🎥 Demo Video
+**Watch the full demonstration:** https://youtu.be/M-wpW-iMrME  
+*See all features in action including keyboard shortcuts, real-time transcription, and desktop app*
+
 ## 💻 Desktop App Available
 ✅ **Native Windows/macOS/Linux desktop application built successfully!**  
-Download from [Releases](https://github.com/vasanthV127/wispr-clone/releases) (coming soon)
-## �🎥 Demo Video
-[Watch the demo video here](#) *(Add your video link after recording)*
+Lightweight (~10MB) cross-platform app powered by Tauri + Rust
 
 ## Features
 
@@ -196,12 +199,20 @@ MIT
 ## Author
 
 **Vasanth V**  
-Built as part of technical assignment for software developer internship.
+Built as a technical assignment demonstrating cross-platform AI-powered desktop application development.
 
-## Submission
+**Project Repository:** https://github.com/vasanthV127/wispr-clone  
+**Live Demo:** https://wispr-clone-three.vercel.app  
+**Demo Video:** https://youtu.be/M-wpW-iMrME
 
-- **GitHub Repository**: https://github.com/vasanthV127/wispr-clone
-- **Demo Video**: *(Add link after recording)*
-- **Submission Date**: December 2025
+## Acknowledgments
+
+- **Tauri** - For the excellent cross-platform framework
+- **Deepgram** - For powerful speech recognition API
+- **React** - For the robust UI framework
+
+---
+
+*Built with ❤️ using Tauri, React, and Deepgram*
 - **Demo Video**: [Your video link]
 - **Submission Date**: December 2025
