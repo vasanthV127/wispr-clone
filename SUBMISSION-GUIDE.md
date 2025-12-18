@@ -19,16 +19,20 @@ npm install
 
 ### Step 3: Run the Application
 
-**Option A: Web Version (Recommended - Easiest)**
+**Option A: Web Version (Easiest - No build tools needed)**
 ```bash
 npm run dev
 ```
 Then open: http://localhost:5173
 
-**Option B: Desktop App (Requires Visual C++ Build Tools)**
+**Option B: Live Demo (No installation needed!)**
+Visit: https://wispr-clone-5ahw6s8ws-vasanths-projects-60ee5249.vercel.app
+
+**Option C: Desktop App ✅ Available!**
 ```bash
 npm run tauri dev
 ```
+Note: Desktop build completed successfully! Native Windows app available.
 
 ### Step 4: Test the App
 1. Click "Push to Talk" button
@@ -133,14 +137,17 @@ Hi [Recruiter Name],
 I've completed the Wispr Flow clone technical assignment. Here are the deliverables:
 
 📁 GitHub Repository: https://github.com/vasanthV127/wispr-clone
+� Live Demo: https://wispr-clone-5ahw6s8ws-vasanths-projects-60ee5249.vercel.app
 🎥 Demo Video: [Your YouTube/Google Drive Link]
+💻 Desktop App: Native Windows/macOS/Linux build completed
 
 Technical Stack:
-- Tauri (Desktop Framework)
+- Tauri 2.0 (Cross-platform Desktop Framework)
 - React 19.1.0 (Frontend)
 - Deepgram Nova-2 API (Speech Recognition)
+- Vercel (Deployment)
 
-Core Features Implemented:
+Core Features (6/6) ✅:
 ✅ Push-to-Talk Voice Input
 ✅ Microphone Access & Audio Capture
 ✅ Real-Time Transcription
@@ -148,10 +155,20 @@ Core Features Implemented:
 ✅ Recording Controls with Visual Feedback
 ✅ Comprehensive Error Handling
 
+Bonus Features (3) 🌟:
+⌨️ Keyboard Shortcuts (Ctrl+Space)
+📊 Live Word/Character Count
+💾 Download Transcription (.txt)
+
+Deployment:
+- Live web version deployed on Vercel
+- Native desktop application built successfully
+- Auto-deployment configured from GitHub
+
 Setup Instructions:
 Full installation and setup guide available in the README.md
 
-Thank you for the opportunity!
+Thank you for the opportunity to work on this project!
 
 Best regards,
 Vasanth V

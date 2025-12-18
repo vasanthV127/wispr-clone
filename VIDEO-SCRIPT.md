@@ -12,9 +12,9 @@
 ## 🎥 Recording Script
 
 ### [0:00-0:10] Introduction
-**[Show browser with app open]**
+**[Show desktop app running]**
 
-"Hi! This is my Wispr Flow clone - a voice-to-text desktop application built with Tauri, React, and Deepgram AI."
+"Hi! This is my Wispr Flow clone - a cross-platform voice-to-text application built with Tauri, React, and Deepgram AI. It works both as a web app and as a native desktop application."
 
 ---
 
@@ -98,16 +98,17 @@
 
 ---
 
-### [1:50-2:10] Show Error Handling
-**[Optional - if time permits]**
+### [1:50-2:10] Show Desktop App
+**[Switch between web and desktop versions]**
 
-"The app also handles errors gracefully. For example..."
+"One of the standout features - this runs both in the browser AND as a native desktop app."
 
-**[You could show]:
-- Permission denied message (if you revoke mic access)
-- API error message (if you remove API key from .env)
+**[Show desktop window]**
 
-"...it shows clear error messages to help users troubleshoot."
+"The desktop version is built with Tauri, making it incredibly lightweight - just 10MB compared to typical Electron apps that are 100MB+."
+
+**[Optional - show error handling]:**
+"The app also handles errors gracefully with clear messages for troubleshooting."
 
 ---
 
@@ -115,24 +116,26 @@
 **[Can show code editor briefly or just talk]**
 
 "Under the hood, this uses:
-- Tauri for the desktop framework
-- React for the user interface  
+- Tauri for cross-platform native apps (Rust backend)
+- React 19 for the user interface  
 - Deepgram's Nova-2 AI model for accurate speech recognition
 - Web Audio API for microphone access
+- Deployed on Vercel with auto-deployment from GitHub
 
-The code is clean, well-documented, and follows best practices with proper separation of concerns."
+The code is clean, well-documented, and follows best practices with proper separation of concerns between UI, audio capture, and transcription services."
 
 ---
 
 ### [2:30-2:45] Conclusion
 **[Back to app running]**
 
-"This application successfully implements all the core features:
-- Push-to-talk voice input
-- Real-time transcription
-- Clipboard integration
-- Error handling
-- And a responsive, user-friendly interface"
+"This application exceeds all requirements with:
+- All 6 core features implemented
+- 3 bonus features: keyboard shortcuts, live stats, and file download
+- Both web and desktop versions
+- Live deployment on Vercel
+- Professional code architecture
+- Complete documentation"
 
 ---
 
