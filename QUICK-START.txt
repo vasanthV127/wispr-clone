@@ -1,0 +1,138 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                   🚀 QUICK REFERENCE CARD                        ║
+║              Wispr Clone - Submission Checklist                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────┐
+│ ✅ STEP 1: RUN THE APPLICATION                                  │
+└─────────────────────────────────────────────────────────────────┘
+
+1. Open PowerShell in project folder
+2. Run: npm run dev
+3. Open browser: http://localhost:5173
+4. Click "Push to Talk" → Speak → View transcription
+
+┌─────────────────────────────────────────────────────────────────┐
+│ ✅ STEP 2: RECORD DEMO VIDEO (2-3 minutes)                      │
+└─────────────────────────────────────────────────────────────────┘
+
+Recording Tool Options:
+  • Windows Game Bar: Press Win + G
+  • OBS Studio: https://obsproject.com (Free)
+  • Loom: https://loom.com (Easy)
+
+What to Show:
+  ✓ App interface
+  ✓ Click "Push to Talk"
+  ✓ Speak into microphone
+  ✓ Show transcription appearing
+  ✓ Copy to clipboard feature
+  ✓ Clear button
+  ✓ Record 2nd sentence (show append)
+  ✓ Mention: "Built with Tauri, React, Deepgram"
+
+📝 Full Script: See VIDEO-SCRIPT.md
+
+Upload Options:
+  • YouTube: Upload as "Unlisted"
+  • Google Drive: Share → "Anyone with link"
+
+┌─────────────────────────────────────────────────────────────────┐
+│ ✅ STEP 3: UPDATE README WITH VIDEO LINK                        │
+└─────────────────────────────────────────────────────────────────┘
+
+1. After uploading video, copy the link
+2. Open README.md
+3. Replace: [Watch the demo video here](#)
+   With: [Watch the demo video here](YOUR_VIDEO_LINK)
+4. Save file
+5. Push to GitHub:
+   git add README.md
+   git commit -m "Add demo video link"
+   git push
+
+┌─────────────────────────────────────────────────────────────────┐
+│ ✅ STEP 4: FINAL VERIFICATION                                   │
+└─────────────────────────────────────────────────────────────────┘
+
+Check These:
+  □ GitHub repo is PUBLIC
+    → Go to: https://github.com/vasanthV127/wispr-clone/settings
+    → Scroll to "Danger Zone"
+    → Make sure it's public
+  
+  □ README has all info
+  □ Demo video is accessible (test in incognito)
+  □ All features work in the app
+  □ .env file is NOT on GitHub (only .env.example should be there)
+
+┌─────────────────────────────────────────────────────────────────┐
+│ ✅ STEP 5: SUBMIT TO COMPANY                                    │
+└─────────────────────────────────────────────────────────────────┘
+
+Send Email With:
+
+Subject: 
+  Wispr Flow Clone - Technical Assignment - Vasanth V
+
+Body:
+  Hi [Recruiter Name],
+
+  I've completed the Wispr Flow clone assignment.
+
+  📁 GitHub: https://github.com/vasanthV127/wispr-clone
+  🎥 Demo Video: [YOUR_VIDEO_LINK]
+
+  Tech Stack:
+  • Tauri (Desktop Framework)
+  • React 19.1.0 (Frontend)
+  • Deepgram Nova-2 (AI Speech Recognition)
+
+  All 6 Core Features Implemented:
+  ✅ Push-to-Talk Voice Input
+  ✅ Microphone Access & Audio Capture
+  ✅ Real-Time Transcription
+  ✅ Display & Insert Text
+  ✅ Recording Controls
+  ✅ Error Handling
+
+  Setup instructions in README.md
+
+  Thank you!
+  Vasanth V
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 📞 TROUBLESHOOTING                                              │
+└─────────────────────────────────────────────────────────────────┘
+
+Problem: "API key not configured"
+Fix: Check .env file has: VITE_DEEPGRAM_API_KEY=your_key
+
+Problem: Microphone not working
+Fix: Check browser permissions (lock icon in address bar)
+
+Problem: Git push asks for credentials
+Fix: 
+  Username: vasanthV127
+  Password: Use Personal Access Token
+  Get token: https://github.com/settings/tokens
+  Select: repo scope
+
+Problem: npm run dev fails
+Fix: Run: npm install
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 📚 DETAILED GUIDES                                              │
+└─────────────────────────────────────────────────────────────────┘
+
+• VIDEO-SCRIPT.md      → Detailed 3-minute video script
+• SUBMISSION-GUIDE.md  → Complete submission walkthrough
+• README.md            → Setup and usage instructions
+• QUICKSTART.md        → Fast setup guide
+• DEPLOYMENT.md        → Deployment options
+
+┌─────────────────────────────────────────────────────────────────┐
+│ ✨ YOUR PROJECT IS READY! GOOD LUCK! 🎉                        │
+└─────────────────────────────────────────────────────────────────┘
+
+GitHub: https://github.com/vasanthV127/wispr-clone ✅ LIVE!
